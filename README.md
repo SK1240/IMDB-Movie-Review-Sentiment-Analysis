@@ -63,32 +63,33 @@ Enter a review in the input box, click “**Classify**”, and see the sentiment
 You’ll also see the model’s confidence score.
 
 
-### 🧠 Model Pipeline
+## 🧠 Model Pipeline
 
 🔹 Data Preprocessing
 
-* Load the IMDB dataset (`num_words=10000`)
+   * Load the IMDB dataset (`num_words=10000`)
 
-* Pad or truncate reviews to uniform length (`maxlen=500`)
+   * Pad or truncate reviews to uniform length (`maxlen=500`)
 
 🔹 Model Design (in `IMDB_sentiment_analysis.ipynb`)
 
-* Embedding Layer: Vocabulary size = 10,000, vector size = 128
+   * Embedding Layer: Vocabulary size = 10,000, vector size = 128
 
-* SimpleRNN Layer: 128 hidden units, activation = **ReLU**
+   * SimpleRNN Layer: 128 hidden units, activation = **ReLU**
 
-* Dense Layer: 1 unit, activation = **Sigmoid**
+   * Dense Layer: 1 unit, activation = **Sigmoid**
 
-* Optimizer: **Adam**
+   * Optimizer: **Adam**
 
-* Loss Function: **Binary Crossentropy**
+   * Loss Function: **Binary Crossentropy**
 
-* Model saved as `model.h5`
+   * Model saved as `model.h5`
 
 🔹 Prediction Process (`app.py` / `prediction.ipynb`)
 
-* Convert text → sequence of indices
+   * Convert text → sequence of indices
 
-* Pad sequence to consistent input size
+   * Pad sequence to consistent input size
 
-* Feed into trained model → Output predicted sentiment
+   * Feed into trained model → Output predicted sentiment
+
