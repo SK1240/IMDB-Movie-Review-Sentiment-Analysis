@@ -15,3 +15,15 @@ Interface: **Streamlit app** (app.py)
 
 Extras: Jupyter notebooks for **training**, **testing**, and **manual prediction**
 
+## 📁 Project Structure
+
+```
+IMDB-Movie-Review-Sentiment-Analysis/
+├── app.py                               # 🚀 Streamlit UI for real-time sentiment analysis
+├── IMDB_sentiment_analysis.ipynb        # Model training and saving notebook
+├── prediction.ipynb                     # Notebook for custom text predictions
+├── model.h5                   # Pre-trained SimpleRNN model file
+├── requirements.txt                     # Required dependencies
+```
+
+
