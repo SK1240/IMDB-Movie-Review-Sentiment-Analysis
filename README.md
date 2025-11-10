@@ -114,3 +114,16 @@ Confidence Score: 0.95
 * prediction.ipynb: Manual inference notebook
 
 * model.h5: Saved model for deployment
+
+## 🔮 Future Scope
+
+* Upgrade to **LSTM** or **GRU** for stronger contextual understanding
+
+* Add Tokenizer-based preprocessing for flexible input handling
+
+* Containerize with **Docker** and **deploy to AWS** / **Streamlit Cloud** / **Heroku**
+
+## 📜 License
+
+This repository is intended solely for **academic learning** and **experimentation**.
+Please verify results and model behavior before production use.
