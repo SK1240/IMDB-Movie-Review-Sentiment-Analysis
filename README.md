@@ -11,7 +11,7 @@ Architecture: **SimpleRNN with word embeddings**
 
 Goal: **Binary text classification — Positive or Negative**
 
-Interface: **Streamlit app** (app.py)
+Interface: **Streamlit app** (`app.py`)
 
 Extras: Jupyter notebooks for **training**, **testing**, and **manual prediction**
 
@@ -128,4 +128,5 @@ Confidence Score: 0.95
 This repository is intended solely for **academic learning** and **experimentation**.
 
 Please verify results and model behavior before production use.
+
 
