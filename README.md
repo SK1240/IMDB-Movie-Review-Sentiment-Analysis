@@ -60,6 +60,7 @@ Enter a review in the input box, click “**Classify**”, and see the sentiment
 * ✅ Positive Review
 
 * ❌ Negative Review
+  
 You’ll also see the model’s confidence score.
 
 
@@ -93,3 +94,13 @@ You’ll also see the model’s confidence score.
 
    * Feed into trained model → Output predicted sentiment
 
+
+## 🌟 Example
+Input:
+> “Absolutely loved this movie — the cast and story were brilliant!”
+
+Output:
+```
+Sentiment: Positive ✅
+Confidence Score: 0.95
+```
