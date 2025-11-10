@@ -97,10 +97,20 @@ You’ll also see the model’s confidence score.
 
 ## 🌟 Example
 Input:
-> “Absolutely loved this movie — the cast and story were brilliant!”
+> **“Absolutely loved this movie — the cast and story were brilliant!”**
 
 Output:
 ```
 Sentiment: Positive ✅
 Confidence Score: 0.95
 ```
+
+## 📘 File Summary
+
+* app.py: Core Streamlit app for predictions
+
+* IMDB_sentiment_analysis.ipynb: Model training notebook
+
+* prediction.ipynb: Manual inference notebook
+
+* model.h5: Saved model for deployment
