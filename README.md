@@ -38,8 +38,8 @@ cd IMDB-Movie-Review-Sentiment-Analysis
 python -m venv .venv
 ```
 Activation:
-* Windows: .venv\Scripts\activate
-* Mac/Linux: source .venv/bin/activate
+* Windows: `.venv\Scripts\activate`
+* Mac/Linux: `source .venv/bin/activate`
 
 ### 3️⃣ Install dependencies
 ```
@@ -54,9 +54,41 @@ To start the web app:
 streamlit run main.py
 ```
 A local Streamlit server will open at [localhost:8501](http://localhost:8501)
+
 Enter a review in the input box, click “**Classify**”, and see the sentiment output:
 
 * ✅ Positive Review
 
 * ❌ Negative Review
 You’ll also see the model’s confidence score.
+
+
+### 🧠 Model Pipeline
+
+🔹 Data Preprocessing
+
+* Load the IMDB dataset (`num_words=10000`)
+
+* Pad or truncate reviews to uniform length (`maxlen=500`)
+
+🔹 Model Design (in `IMDB_sentiment_analysis.ipynb`)
+
+* Embedding Layer: Vocabulary size = 10,000, vector size = 128
+
+* SimpleRNN Layer: 128 hidden units, activation = **ReLU**
+
+* Dense Layer: 1 unit, activation = **Sigmoid**
+
+* Optimizer: **Adam**
+
+* Loss Function: **Binary Crossentropy**
+
+* Model saved as `model.h5`
+
+🔹 Prediction Process (`app.py` / `prediction.ipynb`)
+
+* Convert text → sequence of indices
+
+* Pad sequence to consistent input size
+
+* Feed into trained model → Output predicted sentiment
